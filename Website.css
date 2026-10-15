@@ -1,0 +1,266 @@
+@font-face {
+    font-family:Cattie;
+    src: url(Dafonts/Cattie-Regular.ttf);
+}
+@font-face {
+    font-family:Katto;
+    src: url(Dafonts/Katto-PersonalUse.otf);
+}
+@font-face {
+    font-family:Kitten;
+    src: url(Dafonts/kittencutes.ttf);
+}
+@font-face {
+    font-family:Catty;
+    src: url(Dafonts/Catty.otf);
+}
+
+body {
+    background: linear-gradient(48deg,#b98558,#f9cca5);
+    margin: 0;
+
+}
+
+
+.brand-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-header img {
+    position: absolute;
+    left: 0;
+}
+
+.brand-header h1 {
+    margin: 0;
+}
+#header {
+    font-family: Catty;
+    font-size: 20px;
+    margin: 15px;
+    background: linear-gradient(48deg, #522915,#68351a);
+    color: bisque;
+    padding: 20PX;
+}
+
+.navbar {
+    font-family: Katto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: bisque;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+#Header .navbar {
+    /* Header navigation styles */
+    background-color: #522915;
+}
+
+#MAIN .navbar {
+    /* Main navigation styles */
+    text-color: black;
+    text-size: 50;
+}
+
+#MAIN .navbar a {
+    color: #522915;
+}
+
+/* NAVIGATION HOVER */
+.NAVBAR a:hover {
+    background-color: antiquewhite;
+    color: #A15143;
+
+}
+
+/* MAIN */
+#MAIN {
+    background-color: antiquewhite;
+    padding: 30px;
+    min-height: 400px;
+    text-align: center;
+}
+
+
+/* BOX CLASS */
+.BOX {
+    border: 2px solid #A15143;
+    padding: 20PX;
+    margin: 15px;
+    border-radius: 10PX;
+    max-width: 150px;
+    max-height: 150px;
+    display: inline-block;
+}
+
+
+.BOX a {
+    font-family: Kitten;
+    font-size: 20px;
+    text-decoration: None;
+    margin:0;
+    color: #A15143;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 18px;
+    border: 2px solid #A15143;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.photo-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: zoom-in;
+}
+
+.photo-gallery img:focus-visible {
+    outline: 3px solid #522915;
+    outline-offset: 3px;
+}
+
+.photo-viewer {
+    position: fixed;
+    width: min(90vw, 1100px);
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 42px 20px 16px;
+    border: 2px solid #A15143;
+    border-radius: 12px;
+    background: #fff8ed;
+    color: #522915;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.photo-viewer::backdrop {
+    background: rgb(32 18 10 / 80%);
+}
+
+.photo-viewer-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: 0;
+    background: transparent;
+    color: #522915;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.photo-viewer-image-container {
+    max-width: 100%;
+    max-height: 60vh;
+    overflow: auto;
+    text-align: center;
+}
+
+.photo-viewer-image {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.photo-viewer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.photo-viewer-controls button {
+    min-width: 42px;
+    padding: 8px 12px;
+    border: 1px solid #A15143;
+    border-radius: 6px;
+    background: #fff;
+    color: #522915;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.photo-viewer-help {
+    margin: 8px 0 0;
+    text-align: center;
+}
+
+.BOX input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 12px;
+    box-sizing: border-box;
+    border: 2px solid #A15143;
+    border-radius: 100px;
+}
+
+.reservation-box {
+    display: block;
+    width: 240px;
+    max-width: 100%;
+    max-height: none;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.reservation-box label {
+    display: block;
+}
+
+/* TITLE CLASS */
+.TITLE {
+    color: #A15143;
+}
+
+.section input{
+    width: 60%; 
+}
+
+/*FOOTER */
+#FOOTER {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background-color: #522915;
+    color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+}
+#FOOTER a {
+    color: bisque;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+#FOOTER a:hover {
+    background-color: antiquewhite;
+    color: #A15143;
+}
+
+#FOOTER p {
+    margin: 0;
+}
